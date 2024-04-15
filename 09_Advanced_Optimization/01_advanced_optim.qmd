@@ -4,7 +4,7 @@ format:
     theme: "night" #["theme/q-theme.scss"]
     slide-number: c/t
     logo: "eclipse_logo_small.png"
-    footer: "[WS23_DataScienceForEM](https://github.com/ECLIPSE-Lab/WS23_DataScienceForEM)"
+    footer: "[SS24_DataScienceForEM](https://github.com/ECLIPSE-Lab/SS24_DataScienceForEM)"
     code-copy: true
     center-title-slide: false
     include-in-header: ../heading-meta.html
@@ -29,7 +29,7 @@ execute:
 <h3> 2024-01-31 </h3>
 <br>
 
-<h3>  &nbsp; [https://github.com/ECLIPSE-Lab/SS23_DataScienceForEM](https://github.com/ECLIPSE-Lab/WS23_DataScienceForEM)
+<h3>  &nbsp; [https://github.com/ECLIPSE-Lab/SS23_DataScienceForEM](https://github.com/ECLIPSE-Lab/SS24_DataScienceForEM)
 
 ## Computational Imaging as Inverse Problem solving 1
 
@@ -39,67 +39,67 @@ execute:
 ## Computational Imaging as Inverse Problem solving 2
 
 
-![](./img/2023_07_06_11_06_53.png){width=100%}
+![](./img/2024_07_06_11_06_53.png){width=100%}
 
 ## Computational Imaging as Inverse Problem solving 3
 
-![](./img/2023_07_06_11_07_16.png){width=100%}
+![](./img/2024_07_06_11_07_16.png){width=100%}
 
 ## Example: Tomography 1
 
-![](./img/2023_07_06_11_07_33.png){width=100%}
+![](./img/2024_07_06_11_07_33.png){width=100%}
 
 ## Example: Tomography 2
 
-![](./img/2023_07_06_11_08_11.png){width=100%}
+![](./img/2024_07_06_11_08_11.png){width=100%}
 
 ## Example: Tomography 3
 
-![](./img/2023_07_06_11_08_24.png){width=100%}
+![](./img/2024_07_06_11_08_24.png){width=100%}
 
 ## Example: Tomography 4
 
-![](./img/2023_07_06_11_08_49.png){width=100%}
+![](./img/2024_07_06_11_08_49.png){width=100%}
 
 ## Example: Tomography 5
 
-![](./img/2023_07_06_11_09_00.png){width=100%}
+![](./img/2024_07_06_11_09_00.png){width=100%}
 
 ## Example: Tomography 6
 
-![](./img/2023_07_06_11_09_10.png){width=100%}
+![](./img/2024_07_06_11_09_10.png){width=100%}
 
 ## Example: Tomography 7
 
-![](./img/2023_07_06_11_09_23.png){width=100%}
+![](./img/2024_07_06_11_09_23.png){width=100%}
 
 ## Example: Tomography 8
 
-![](./img/2023_07_06_11_09_40.png){width=100%}
+![](./img/2024_07_06_11_09_40.png){width=100%}
 
 ## Example: Tomography 9
 
-![](./img/2023_07_06_11_09_49.png){width=100%}
+![](./img/2024_07_06_11_09_49.png){width=100%}
 
 ## Example: Tomography 10
 
-![](./img/2023_07_06_11_09_58.png){width=100%}
+![](./img/2024_07_06_11_09_58.png){width=100%}
 
 ## Example: Tomography 11
 
-![](./img/2023_07_06_11_10_06.png){width=100%}
+![](./img/2024_07_06_11_10_06.png){width=100%}
 
 ## Example: Tomography 12
 
-![](./img/2023_07_06_11_10_16.png){width=100%}
+![](./img/2024_07_06_11_10_16.png){width=100%}
 
 ## Example: Tomography 13
 
-![](./img/2023_07_06_11_10_27.png){width=100%}
+![](./img/2024_07_06_11_10_27.png){width=100%}
 
 ## Example: Tomography 14
 
-![](./img/2023_07_06_11_10_35.png){width=100%}
+![](./img/2024_07_06_11_10_35.png){width=100%}
 
 ## Math notation for imaging inverse problems
 

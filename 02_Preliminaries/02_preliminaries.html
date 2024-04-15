@@ -417,11 +417,11 @@ Data Science in Electron Microscopy
 Philipp Pelz
 </h3>
 <h3>
-2023
+2024
 </h3>
 <p><br></p>
 <h3>
-<p>&nbsp; <a href="https://github.com/ECLIPSE-Lab/WS23_DataScienceForEM">https://github.com/ECLIPSE-Lab/WS23_DataScienceForEM</a></p>
+<p>&nbsp; <a href="https://github.com/ECLIPSE-Lab/SS24_DataScienceForEM">https://github.com/ECLIPSE-Lab/SS24_DataScienceForEM</a></p>
 </h3></section>
 <section id="data-manipulation" class="slide level2">
 <h2>Data Manipulation</h2>
@@ -470,8 +470,7 @@ Philipp Pelz
 <li><p>To automatically infer one component of the shape, we can place a <code>-1</code> for the shape component that should be inferred automatically. In our case, instead of calling <code>x.reshape(3, 4)</code>, we could have equivalently called <code>x.reshape(-1, 4)</code> or <code>x.reshape(3, -1)</code>.</p></li>
 </ul>
 <p>Practitioners often need to work with tensors initialized to contain all zeros or ones. [<strong>We can construct a tensor with all elements set to zero</strong>] (<del>or one</del>) and a shape of (2, 3, 4) via the <code>zeros</code> function.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python input number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="op">%%</span>tab pytorch</span>
-<span id="cb6-2"><a href="#cb6-2"></a>torch.zeros((<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python input number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a>torch.zeros((<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Similarly, we can create a tensor with all ones by invoking <code>ones</code>.</p>
 <p>We often wish to [<strong>sample each element randomly (and independently)</strong>] from a given probability distribution. For example, the parameters of neural networks are often initialized randomly. The following snippet creates a tensor with elements drawn from a standard Gaussian (normal) distribution with mean 0 and standard deviation 1.</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode numberSource python input number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="op">%%</span>tab pytorch</span>
@@ -585,7 +584,7 @@ Philipp Pelz
 </ul>
 
 <img src="eclipse_logo_small.png" class="slide-logo r-stretch"><div class="footer footer-default">
-<p><a href="https://github.com/ECLIPSE-Lab/WS23_DataScienceForEM">WS23_DataScienceForEM</a></p>
+<p><a href="https://github.com/ECLIPSE-Lab/SS24_DataScienceForEM">SS24_DataScienceForEM</a></p>
 </div>
 </section>
     </div>

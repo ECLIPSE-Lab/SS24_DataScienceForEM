@@ -4,7 +4,7 @@ format:
     theme: "night" #["theme/q-theme.scss"]
     slide-number: c/t
     logo: "eclipse_logo_small.png"
-    footer: "[WS23_DataScienceForEM](https://github.com/ECLIPSE-Lab/WS23_DataScienceForEM)"
+    footer: "[SS24_DataScienceForEM](https://github.com/ECLIPSE-Lab/SS24_DataScienceForEM)"
     code-copy: true
     center-title-slide: false
     include-in-header: ../heading-meta.html
@@ -26,10 +26,10 @@ execute:
 
 <h3> Philipp Pelz </h3>
 
-<h3> 2023 </h3>
+<h3> 2024 </h3>
 <br>
 
-<h3>  &nbsp; [https://github.com/ECLIPSE-Lab/WS23_DataScienceForEM](https://github.com/ECLIPSE-Lab/WS23_DataScienceForEM)
+<h3>  &nbsp; [https://github.com/ECLIPSE-Lab/SS24_DataScienceForEM](https://github.com/ECLIPSE-Lab/SS24_DataScienceForEM)
 
 ## Data Manipulation
 :label:`sec_ndarray`
