@@ -520,9 +520,9 @@ Philipp Pelz
 <div class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a>torch.randn(<span class="dv">3</span>, <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
-<pre><code>tensor([[ 0.7842, -0.8970,  0.0173, -0.4909],
-        [-1.1109, -0.1931,  1.3732,  2.3325],
-        [ 1.4728,  0.3509, -0.1261, -0.1656]])</code></pre>
+<pre><code>tensor([[ 1.1205,  1.5317,  0.5447,  0.7105],
+        [-0.8493,  0.8872, -1.3856, -0.8756],
+        [-1.2891,  0.4280,  0.5957,  1.2619]])</code></pre>
 </div>
 </div>
 <p>Finally, we can construct tensors by [<strong>supplying the exact values for each element</strong>] by supplying (possibly nested) Python list(s) containing numerical literals. Here, we construct a matrix with a list of lists, where the outermost list corresponds to axis 0, and the inner list to axis 1.</p>
@@ -686,8 +686,8 @@ Philipp Pelz
 <span id="cb38-3"><a href="#cb38-3"></a>Z[:] <span class="op">=</span> X <span class="op">+</span> Y</span>
 <span id="cb38-4"><a href="#cb38-4"></a><span class="bu">print</span>(<span class="st">'id(Z):'</span>, <span class="bu">id</span>(Z))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>id(Z): 137214281010640
-id(Z): 137214281010640</code></pre>
+<pre><code>id(Z): 2763942910112
+id(Z): 2763942910112</code></pre>
 </div>
 </div>
 <p>[<strong>If the value of <code>X</code> is not reused in subsequent computations, we can also use <code>X[:] = X + Y</code> or <code>X += Y</code> to reduce the memory overhead of the operation.</strong>]</p>
