@@ -30,7 +30,7 @@ import tarfile
 import time
 import zipfile
 from collections import defaultdict
-import pandas as pd
+# import pandas as pd
 import requests
 from IPython import display
 from matplotlib import pyplot as plt
