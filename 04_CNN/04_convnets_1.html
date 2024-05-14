@@ -1258,7 +1258,7 @@ Flatten output shape:    torch.Size([1, 10])</code></pre>
 </ul>
 <div class="cell" data-execution_count="20">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1"></a>model.net[<span class="dv">1</span>].gamma.reshape((<span class="op">-</span><span class="dv">1</span>,)), model.net[<span class="dv">1</span>].beta.reshape((<span class="op">-</span><span class="dv">1</span>,))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="206">
+<div class="cell-output cell-output-display" data-execution_count="20">
 <pre><code>(tensor([1., 1., 1., 1., 1., 1.], grad_fn=&lt;ViewBackward0&gt;),
  tensor([0., 0., 0., 0., 0., 0.], grad_fn=&lt;ViewBackward0&gt;))</code></pre>
 </div>
@@ -1481,7 +1481,7 @@ f_2\left(\left[\mathbf{x}, f_1\left(\mathbf{x}\right)\right]\right), f_3\left(\l
 <span id="cb30-2"><a href="#cb30-2"></a>X <span class="op">=</span> torch.randn(<span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">8</span>, <span class="dv">8</span>)</span>
 <span id="cb30-3"><a href="#cb30-3"></a>Y <span class="op">=</span> blk(X)</span>
 <span id="cb30-4"><a href="#cb30-4"></a>Y.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="212">
+<div class="cell-output cell-output-display" data-execution_count="26">
 <pre><code>torch.Size([4, 23, 8, 8])</code></pre>
 </div>
 </div>
@@ -1507,7 +1507,7 @@ f_2\left(\left[\mathbf{x}, f_1\left(\mathbf{x}\right)\right]\right), f_3\left(\l
 <div class="cell" data-execution_count="28">
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1"></a>blk <span class="op">=</span> transition_block(<span class="dv">10</span>)</span>
 <span id="cb33-2"><a href="#cb33-2"></a>blk(Y).shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="214">
+<div class="cell-output cell-output-display" data-execution_count="28">
 <pre><code>torch.Size([4, 10, 4, 4])</code></pre>
 </div>
 </div>
