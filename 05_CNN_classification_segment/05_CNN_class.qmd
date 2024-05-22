@@ -225,18 +225,6 @@ $$
 
 ---
 
-### Historical Context
-
-- **Gibbs (1902)**: Adapted softmax ideas from physics :cite:`Gibbs.1902`.
-- **Boltzmann**: Modeled distribution over energy states in gas molecules:
-  - Prevalence of a state proportional to $\exp(-E/kT)$.
-  - $E$ = energy of a state, $T$ = temperature, $k$ = Boltzmann constant.
-  - Changing "temperature" $T$ adjusts preference for energy states.
-  
-- **Energy-Based Models**:
-  - Energy equates to error in statistical systems.
-  - Used in deep learning to describe problems :cite:`Ranzato.Boureau.Chopra.ea.2007`.
-
 
 ## Vectorization
 ### Computational Efficiency with Vectorization
@@ -258,7 +246,7 @@ $$
 \hat{\mathbf{Y}} & = \mathrm{softmax}(\mathbf{O}).
 \end{aligned}
 $$
-:eqlabel:`eq_minibatch_softmax_reg`
+`eq_minibatch_softmax_reg`
 
 - **Efficiency**: Converts the dominant operation to matrix-matrix product $\mathbf{X} \mathbf{W}$.
 - **Rowwise Softmax**: 
@@ -274,8 +262,6 @@ $$
 
 
 ## Loss Function
-:label:`subsec_softmax-regression-loss-func`
-
 ### Mapping Features to Probabilities
 
 - Goal: Optimize the accuracy of mapping from features $\mathbf{x}$ to probabilities $\mathbf{\hat{y}}$.
@@ -447,19 +433,6 @@ $$
 - Derivative of cross-entropy loss combined with softmax is similar to the derivative of squared error (difference between expected behavior and prediction).
 - Briefly touched on connections to statistical physics and information theory.
 
----
-
-### Computational Considerations
-
-- **Parameterization and Cost**: For fully connected layers with $d$ inputs and $q$ outputs, the cost is $\mathcal{O}(dq)$.
-  - High cost in practice, but can be reduced through approximation and compression.
-
-### Reducing Computational Cost
-
-- **Deep Fried Convnets**: Reduce cost using permutations, Fourier transforms, and scaling :cite:`Yang.Moczulski.Denil.ea.2015`.
-- **Structural Matrix Approximations**: Techniques for reducing computational cost :cite:`sindhwani2015structured`.
-- **Quaternion-like Decompositions**: Reduce cost to $\mathcal{O}(\frac{dq}{n})$ with a trade-off in accuracy for computational and storage efficiency :cite:`Zhang.Tay.Zhang.ea.2021`.
-
 
 ## Exercises
 
@@ -519,6 +492,8 @@ the item with the largest score is the most likely one to be chosen :cite:`Bradl
     - Deep networks like LeNet-5 :cite:`LeCun.Jackel.Bottou.ea.1995`.
     - Support vector machines with invariances :cite:`Scholkopf.Burges.Vapnik.1996`.
     - Tangent distance classifiers :cite:`Simard.LeCun.Denker.ea.1998`.
+
+---
 
 ### MNIST as a Benchmark
 

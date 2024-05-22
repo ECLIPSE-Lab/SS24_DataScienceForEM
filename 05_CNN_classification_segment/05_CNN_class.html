@@ -659,24 +659,6 @@ o_3 &amp;= x_1 w_{31} + x_2 w_{32} + x_3 w_{33} + x_4 w_{34} + b_3.
 \operatorname*{argmax}_j \hat y_j = \operatorname*{argmax}_j o_j.
 \]</span></p>
 </section>
-<section class="slide level2">
-
-<h3 id="historical-context">Historical Context</h3>
-<ul>
-<li><strong>Gibbs (1902)</strong>: Adapted softmax ideas from physics :cite:<code>Gibbs.1902</code>.</li>
-<li><strong>Boltzmann</strong>: Modeled distribution over energy states in gas molecules:
-<ul>
-<li>Prevalence of a state proportional to <span class="math inline">\(\exp(-E/kT)\)</span>.</li>
-<li><span class="math inline">\(E\)</span> = energy of a state, <span class="math inline">\(T\)</span> = temperature, <span class="math inline">\(k\)</span> = Boltzmann constant.</li>
-<li>Changing “temperature” <span class="math inline">\(T\)</span> adjusts preference for energy states.</li>
-</ul></li>
-<li><strong>Energy-Based Models</strong>:
-<ul>
-<li>Energy equates to error in statistical systems.</li>
-<li>Used in deep learning to describe problems :cite:<code>Ranzato.Boureau.Chopra.ea.2007</code>.</li>
-</ul></li>
-</ul>
-</section>
 <section id="vectorization" class="slide level2">
 <h2>Vectorization</h2>
 <h3 id="computational-efficiency-with-vectorization">Computational Efficiency with Vectorization</h3>
@@ -700,7 +682,7 @@ o_3 &amp;= x_1 w_{31} + x_2 w_{32} + x_3 w_{33} + x_4 w_{34} + b_3.
 \mathbf{O} &amp;= \mathbf{X} \mathbf{W} + \mathbf{b}, \\
 \hat{\mathbf{Y}} &amp; = \mathrm{softmax}(\mathbf{O}).
 \end{aligned}
-\]</span> :eqlabel:<code>eq_minibatch_softmax_reg</code></p>
+\]</span> <code>eq_minibatch_softmax_reg</code></p>
 <ul>
 <li><strong>Efficiency</strong>: Converts the dominant operation to matrix-matrix product <span class="math inline">\(\mathbf{X} \mathbf{W}\)</span>.</li>
 <li><strong>Rowwise Softmax</strong>:
@@ -720,7 +702,6 @@ o_3 &amp;= x_1 w_{31} + x_2 w_{32} + x_3 w_{33} + x_4 w_{34} + b_3.
 </section>
 <section id="loss-function" class="slide level2">
 <h2>Loss Function</h2>
-<p>:label:<code>subsec_softmax-regression-loss-func</code></p>
 <h3 id="mapping-features-to-probabilities">Mapping Features to Probabilities</h3>
 <ul>
 <li>Goal: Optimize the accuracy of mapping from features <span class="math inline">\(\mathbf{x}\)</span> to probabilities <span class="math inline">\(\mathbf{\hat{y}}\)</span>.</li>
@@ -926,22 +907,6 @@ H[P] = \sum_j - P(j) \log P(j).
 <li>Briefly touched on connections to statistical physics and information theory.</li>
 </ul>
 </section>
-<section class="slide level2">
-
-<h3 id="computational-considerations">Computational Considerations</h3>
-<ul>
-<li><strong>Parameterization and Cost</strong>: For fully connected layers with <span class="math inline">\(d\)</span> inputs and <span class="math inline">\(q\)</span> outputs, the cost is <span class="math inline">\(\mathcal{O}(dq)\)</span>.
-<ul>
-<li>High cost in practice, but can be reduced through approximation and compression.</li>
-</ul></li>
-</ul>
-<h3 id="reducing-computational-cost">Reducing Computational Cost</h3>
-<ul>
-<li><strong>Deep Fried Convnets</strong>: Reduce cost using permutations, Fourier transforms, and scaling :cite:<code>Yang.Moczulski.Denil.ea.2015</code>.</li>
-<li><strong>Structural Matrix Approximations</strong>: Techniques for reducing computational cost :cite:<code>sindhwani2015structured</code>.</li>
-<li><strong>Quaternion-like Decompositions</strong>: Reduce cost to <span class="math inline">\(\mathcal{O}(\frac{dq}{n})\)</span> with a trade-off in accuracy for computational and storage efficiency :cite:<code>Zhang.Tay.Zhang.ea.2021</code>.</li>
-</ul>
-</section>
 <section id="exercises" class="slide level2">
 <h2>Exercises</h2>
 <ol type="1">
@@ -1020,6 +985,9 @@ H[P] = \sum_j - P(j) \log P(j).
 </ul></li>
 </ul></li>
 </ul>
+</section>
+<section class="slide level2">
+
 <h3 id="mnist-as-a-benchmark">MNIST as a Benchmark</h3>
 <ul>
 <li><strong>Historical Significance</strong>: Served as the reference for comparing machine learning algorithms for over a decade.</li>
