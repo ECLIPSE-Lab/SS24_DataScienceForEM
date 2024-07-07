@@ -510,6 +510,8 @@ the item with the largest score is the most likely one to be chosen :cite:`Bradl
   - Poses a more relevant challenge :cite:`Deng.Dong.Socher.ea.2009`.
   - Too large for interactive examples and illustrations in this context.
   
+---
+
 - **Fashion-MNIST**:
   - Released in 2017 :cite:`Xiao.Rasul.Vollgraf.2017`.
   - Contains images of 10 categories of clothing at $28 \times 28$ pixels resolution.
